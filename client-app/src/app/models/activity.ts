@@ -1,4 +1,3 @@
-import { act } from 'react-dom/test-utils';
 import { Profile } from './profile';
 
 export interface Activity {

@@ -7,10 +7,10 @@ import { useStore } from '../../app/stores/store';
 import ProfileContent from './ProfileContent';
 import ProfileHeader from './ProfileHeader';
 
-export default observer (function ProfilePage() {
-    const {username} = useParams<{username: string}>();
-    const {profileStore} = useStore();
-    const {loadingProfile, loadProfile, profile} = profileStore;
+export default observer(function ProfilePage() {
+    const { username } = useParams<{ username: string }>();
+    const { profileStore } = useStore();
+    const { loadingProfile, loadProfile, profile } = profileStore;
 
     useEffect(() => {
         loadProfile(username)
@@ -21,11 +21,11 @@ export default observer (function ProfilePage() {
     return (
         <Grid>
             <Grid.Column width={16}>
-                {profile && 
-                <>
-                <ProfileHeader profile={profile} />
-                <ProfileContent profile={profile} />
-                </>}
+                {profile &&
+                    <>
+                        <ProfileHeader profile={profile} />
+                        <ProfileContent profile={profile} />
+                    </>}
             </Grid.Column>
         </Grid>
     )
