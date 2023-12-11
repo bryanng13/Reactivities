@@ -14,6 +14,7 @@ primary_region = "syd"
   Cloudinary__CloudName="bryten"
   Cloudinary__ApiKey="432925258774429"
   Facebook__AppId="996127934774894"
+  Sendgrid__User="Bryten"
 
 [http_service]
   internal_port = 8080
